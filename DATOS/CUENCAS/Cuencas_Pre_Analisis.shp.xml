@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xml:lang="es"><Esri><CreaDate>20240922</CreaDate><CreaTime>11351400</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce><DataProperties><lineage><Process ToolSource="c:\program files\arcgis\pro\Resources\ArcToolbox\toolboxes\Data Management Tools.tbx\UpdateSchema" Date="20240922" Time="113514">UpdateSchema "CIMDATA=&lt;CIMStandardDataConnection xsi:type='typens:CIMStandardDataConnection' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:typens='http://www.esri.com/schemas/ArcGIS/3.0.0'&gt;&lt;WorkspaceConnectionString&gt;DATABASE=G:\Unidades compartidas\GRUPO GDGC\Cuencas_Edier4\SHP_JOIN&lt;/WorkspaceConnectionString&gt;&lt;WorkspaceFactory&gt;Shapefile&lt;/WorkspaceFactory&gt;&lt;Dataset&gt;Cuencas_Edier.shp&lt;/Dataset&gt;&lt;DatasetType&gt;esriDTFeatureClass&lt;/DatasetType&gt;&lt;/CIMStandardDataConnection&gt;" &lt;operationSequence&gt;&lt;workflow&gt;&lt;AddField&gt;&lt;field_name&gt;Torrenci_4&lt;/field_name&gt;&lt;field_type&gt;FLOAT&lt;/field_type&gt;&lt;field_is_nullable&gt;False&lt;/field_is_nullable&gt;&lt;field_is_required&gt;False&lt;/field_is_required&gt;&lt;/AddField&gt;&lt;/workflow&gt;&lt;/operationSequence&gt;</Process><Process ToolSource="c:\program files\arcgis\pro\Resources\ArcToolbox\toolboxes\Data Management Tools.tbx\CalculateField" Date="20240922" Time="113847">CalculateField Cuencas_Edier Torrenci_4 calcular_valor(!Torrenci_1!, !Torrenci_2!, !Torrenci_3!) "Python 3" "def calcular_valor(t1, t2, t3):
+    suma = (t1 == "Torrencial") + (t2 == "Torrencial") + (t3 == "La cuenca es Torrencial")
+    if suma == 3:
+        return 3
+    elif suma == 2:
+        return 2
+    elif suma == 1:
+        return 1
+    else:
+        return 4
+
+" Text NO_ENFORCE_DOMAINS</Process><Process ToolSource="c:\program files\arcgis\pro\Resources\ArcToolbox\toolboxes\Data Management Tools.tbx\Rename" Date="20240922" Time="173046">Rename "G:\Unidades compartidas\GRUPO GDGC\Cuencas_Edier4\SHP_JOIN\Cuencas_Edier.shp" "G:\Unidades compartidas\GRUPO GDGC\Cuencas_Edier4\SHP_JOIN\Cuencas_Pre_Analisis.shp" ShapeFile</Process></lineage></DataProperties></Esri></metadata>
