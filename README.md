@@ -8,4 +8,4 @@ Este proyecto integra conocimientos de ArcGis, programacion en Python y indicios
 
 **¿Que variables y programas se usaron?** Como variables se tiene que el unico insumo necesario es un modelo de elevacion de cualquier escala y area o si es querido se puede agregar los puntos de interseccion de las cuencas de interes particular. Los programas utilizados fueron ArcMap para la visualizacion y tratamiento de datos geoespaciales asi como la utilizacion de herramientas de analisis espacial, para el analisis de base de datos generadas en ArcMap se utilizo Python con el programa Jupyter Notebook.
 
-![Descripción de la imagen](./LOGO)
+![Logo](Proyecto-final-GDGC/LOGO.png)
